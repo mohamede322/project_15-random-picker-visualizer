@@ -1,0 +1,73 @@
+@import "helpers/default";
+@import "helpers/breakpoints";
+body {
+  background-color: #4fbdba;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  gap: 50px;
+  padding: 10px;
+  .txt {
+    p {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+  .result {
+    position: relative;
+    #textarea {
+      width: 500px;
+      height: 130px;
+      padding: 10px;
+      resize: none;
+      font-size: 18px;
+    }
+    .wanted-rolls-container {
+      position: absolute;
+      top: -38px;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      #wanted-rolls {
+        width: 60px;
+        padding: 5px;
+      }
+      label {
+        font-size: 15px;
+      }
+    }
+    #current-words {
+      width: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      .inner-txt {
+        background-color: #072227;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 30px;
+        padding: 5px 20px;
+        color: white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+      .active {
+        background-color: #215d68;
+      }
+    }
+  }
+}

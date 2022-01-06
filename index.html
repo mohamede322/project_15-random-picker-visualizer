@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Picker Visualizer</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./sass/style.css" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="./sass/all.min.css" />
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="txt">
+        <p>Enter all of the choices divided by a comma(" , ").</p>
+        <p>Press Enter when you're done</p>
+      </div>
+      <div class="result">
+        <textarea
+          id="textarea"
+          autofocus
+          placeholder="Enter choices here..."
+        ></textarea>
+        <div class="wanted-rolls-container">
+          <label for="wanted-rolls">Wanted Rolls =></label>
+          <input type="number" id="wanted-rolls" value="20" />
+        </div>
+        <div id="current-words"></div>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="main.js"></script>
+  </body>
+</html>
