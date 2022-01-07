@@ -2,6 +2,7 @@ let textarea = document.getElementById("textarea");
 let currentWords = document.getElementById("current-words");
 let word = document.createElement("div");
 let wantedRollsEl = document.getElementById("wanted-rolls");
+let enterBtn = document.getElementById("enter");
 
 textarea.addEventListener("input", () => {
   currentWords.innerHTML = "";
@@ -38,6 +39,10 @@ window.addEventListener("keydown", (e) => {
     e.preventDefault();
     getRandomWord();
   }
+});
+
+enterBtn.addEventListener("click", () => {
+  getRandomWord();
 });
 
 function getRandomWord() {
